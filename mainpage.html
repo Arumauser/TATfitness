@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Fitness Center</title>
+  <link rel="icon" type="image/x-icon" href="logo.jpg">
+  <style>
+    html{
+      font-family: sans-serif;
+    }
+    body {
+      background-color: #ddf1ed;
+    }
+    ul {
+      list-style-type: none;
+      background-color: #99d1c6;
+      overflow: hidden;
+      width: 100%;
+      height: 96px;
+      padding: 0;
+      margin: 0;
+      top: 0;
+      position: sticky;
+    }
+    li {
+      float: right;
+    }
+    li a {
+      display: inline-block;
+      color: white;
+      font-size: 30px;
+      text-align: center;
+      text-decoration: none;
+      padding: 30px 25px;
+    }
+    li a:hover:not(.active) {
+      background-color: #4b686d;
+    }
+    div {
+      box-sizing: border-box;
+    }
+    .img1 {
+      width: 100%;
+      height: 500px;
+    }
+    .flexconrtainer {
+      display: flex;
+      flex-direction: row;
+    }
+    .flexconrtainer>div {
+      width: 500px;
+      height: 220px;
+      margin: 20px;
+      padding: 10px;
+      background-color: #cbd6d3;
+      font-size: 15px;
+    }
+    .img2 {
+      width: 200px;
+      height: 200px;
+      float: left;
+    }
+    .text {
+      padding-left: 220px;
+      line-height: 1.5;
+      text-align: justify;
+    }
+    .flex {
+      display: flex;
+      flex-direction: row;
+    }
+    .flex>div {
+      width: 450px;
+      height: 260px;
+      background-color: #cbd6d3;
+      border-radius: 20px;
+      margin: auto;
+    }
+    .h1 {
+      font-size: 35px;
+      padding-left: 10px;
+    }
+    .l {
+      width: 100px;
+      height: 100px;
+      float: right;
+    }
+    a {
+      text-decoration: none;
+    }
+    .div2 {
+      width: 500px;
+      height: 250px;
+      background-color: #99d1c6;
+      border-radius: 20px;
+      margin: auto;
+      text-align: center;
+    }
+    div.relative {
+      position: relative;
+    }
+    div.absolute {
+      position: absolute;
+      bottom: 60px;
+      right: 32%;
+    }
+    .flexconrtainer2 {
+      display: flex;
+      flex-direction: row;
+    }
+    .flexconrtainer2>div {
+      width: 30%;
+      height: 400px;
+      background-color: #cbd6d3;
+      padding: 10px;
+      border-radius: 20px;
+      margin-left: 10px;
+    }
+    .btn {
+      display: block;
+      margin: 20px auto;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #4b686d;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      margin-left: 20px;
+    }
+    .btn:hover {
+      background-color: #99d1c6;
+    }
+    .logo {
+      height: 96px;
+      width: 96px;
+      padding-right: 702px;
+    }
+       .footer {
+      background-color: #99d1c6;
+      color: #ffffff;
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 18px;
+      position: relative;
+      font-family: monospace sans-serif;
+    }
+    .footer-logo {
+      height: 50px;
+      width: auto;
+      margin-bottom: 20px;
+    }
+    .footer-nav {
+      margin-bottom: 20px;
+    }
+    .footer-nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+    .footer-nav a:hover {
+      color: #4b686d;
+    }
+    .social-icons {
+      margin-bottom: 20px;
+    }
+    .social-icons a {
+      color: #ffffff;
+      font-size: 24px;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+    .social-icons a:hover {
+      color: #4b686d;
+    }
+    .newsletter-container {
+      margin-bottom: 20px;
+    }
+    .newsletter-input {
+      padding: 10px;
+      width: 300px;
+      border-radius: 5px;
+      border: 1px solid #ffffff;
+      margin-right: 10px;
+    }
+    .newsletter-button {
+      padding: 10px 20px;
+      background-color: #ffffff;
+      color: #99d1c6;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .newsletter-button:hover {
+      background-color: #4b686d;
+      color: #ffffff;
+    }
+    .contact-info {
+      margin-bottom: 20px;
+    }
+    .contact-info p {
+      margin: 5px;
+    }
+    .contact-info a {
+      color: #ffffff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .contact-info a:hover {
+      color: #4b686d;
+    }
+    .copyright {
+      margin-top: 20px;
+    }
+     @media only screen and (max-width: 600px) {
+      .flexconrtainer, .flex{
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+    }
+     @media only screen and (max-width: 600px) {
+      .text{
+      width: 200px;
+    }
+     @media only screen and (max-width: 600px) {
+      .img1, ul{
+    	width: 600px;
+    }
+     @media only screen and (max-width: 600px) {
+      .flex{
+    	width: 300px;
+    }
+    .text2{
+    	width: 370px;
+    	text-align: justify;
+    	line-height: 2;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a href="about.html">About</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="more.html">More</a></li>
+    <li><a href="mainpage.html">Home</a></li>
+    <li><img src="logo.jpg" class="logo"></li>
+  </ul>
+  <img src="fittness1.jpg" class="img1 relative">
+  <div class="div2 absolute">
+    <h1>WELCOME TO T.A.T ONLINE FITNESS CENTER</h1>
+    <p>Get fit, stay healthy, and have fun!</p> 
+    <a href="#a" class="btn">Explore Exercises</a>
+  </div>
+  <br><br><br><br><br><br><br><br id="a"><br><br><br>
+  <h1 class="h1">Exercises To Do At Home</h1>
+  <div class="flexconrtainer">
+    <div>
+      <img src="fittness2.png" class="img2">
+      <h2 class="text">Lunge</h2>
+      <p class="text">Lunges use large lower-body muscles, including the glutes, hamstrings, and quadriceps.</p>
+    </div>
+    <div>
+      <img src="fittness3.png" class="img2">
+      <h2 class="text">Push-up</h2>
+      <p class="text">Building upper body strength, reducing the risk of cardiac events, and improving body composition.</p>
+    </div>
+    <div>
+      <img src="fittness4.png" class="img2">
+      <h2 class="text">Pike Push-up</h2>
+      <p class="text">A pike push-up is a bodyweight exercise that targets the shoulders, triceps, and upper back muscles.</p>
+    </div>
+  </div>
+  <a href="second.html" class="btn">Explore more..</a>
+  <h1 class="h1">Yoga</h1> 
+  <br>
+  <div class="flexconrtainer">
+    <div>
+      <img src="fittness23.jpg" class="img2">
+      <h2 class="text">Kundalini Yoga</h2>
+      <p class="text">Kundalini yoga is also suitable for stress, anxiety, depression and better cognitive function.</p>
+    </div>
+    <div>
+      <img src="fittness24.jpeg" class="img2">
+      <h2 class="text">Bikram Yoga</h2>
+      <p class="text">People practice Bikram yoga, also known as hot yoga, in artificially heated rooms at a temperature of nearly 105oF and 40% humidity.</p>
+    </div>
+    <div>
+      <img src="fittness25.webp" class="img2">
+      <h2 class="text">Prenatal Yoga</h2>
+      <p class="text">Prenatal yoga is carefully adapted for moms-to-be, and is tailored to women in all trimesters.</p>
+    </div>
+  </div>
+  <a href="third.html" class="btn">Explore more..</a>
+  <h1 class="h1">Q and A sessions</h1>
+  <div class="flex">
+    <div>
+      <h2 align="center">Why is Fitness important?</h1>
+      <p style="width: 400px; text-align: justify; line-height: 1.5; padding-left: 10px;">Regular physical activity is one of the most important things you can do for your health. Being physically active can improve your brain health, help manage weight, reduce the risk of disease, strengthen bones and muscles, and improve your ability to do everyday activities.</p>
+    </div>
+    <br>
+     <div>
+      <h2 align="center">What is skill fitness?</h1>
+      <p style="width: 400px; text-align: justify; line-height: 1.5; padding-left: 10px;">Skill-related fitness refers to abilities that help people learn skills. The six parts of skill-related fitness—agility, balance, coordination, power, reaction time, and speed—are described in table 2.1. Skill-related fitness isn't the same as skill. Having good skill-related fitness does help you to learn skills.</p>
+    </div>
+    <br>
+     <div>
+      <h2 align="center">What is fitness and its types?</h1>
+      <p style="width: 400px; text-align: justify; line-height: 1.5; padding-left: 10px;">The three types of fitness are aerobic, muscle strengthening, and flexibility. Understanding the difference in the types of fitness will assist in setting personal health goals. Achieving a healthy balance of all three types of fitness is vital to being physically fit.</p>
+    </div>
+  </div>
+  <br>
+  <div class="flex">
+    <div>
+      <h2 align="center">What fitness is for health?</h1>
+      <p style="width: 400px; text-align: justify; line-height: 1.5; padding-left: 10px;">Health is a state of complete physical, mental and social well-being and not merely absence of disease. Fitness is an ability to execute daily functional activities with optimal performance, endurance, and strength to manage minimalist of disease, fatigue, stress and reduced sedentary behavior.</p>
+    </div>
+    <br>
+     <div>
+      <h2 align="center">What is physical fitness test?</h1>
+      <p style="width: 400px; text-align: justify; line-height: 1.5; padding-left: 10px;">Fitness assessments are a series of tests that measures and monitors students' physical fitness level. The series of tests assess the five components of physical fitness that make up total fitness: cardiovascular endurance, muscular strength, muscular endurance, flexibility, and body composition.</p>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <footer class="footer">
+    <div class="social-icons">
+      <a href="https://www.instagram.com/onlinefitnesscenter_/" target="_blank" title="Instagram" class="a"><img src="app2.jpg" style="width: 20px; height: 20px; border-radius: 20px;"></a>
+      <a href="https://www.tiktok.com/@t.a.tfitness?_t=8jz8tEY9TqZ&_r=1" target="_blank" title="TikTok" class="a"><img src="app1.jpg" style="width: 20px; height: 20px; border-radius: 20px;"></a>
+      <a href="https://www.youtube.com/" target="_blank" title="Youtube" class="a"><img src="app3.jpg" style="width: 20px; height: 20px; border-radius: 20px;"></i></a>
+    </div>
+    <img src="logo.jpg" alt="T.A.T Online Fitness Center" class="footer-logo">
+    <nav class="footer-nav">
+      <a href="mainpage.html" class="a">Home</a>
+      <a href="more.html" class="a">More</a>
+      <a href="contact.html" class="a">Contact</a>
+      <a href="shop.html" class="a">Shop</a>
+      <a href="about.html" class="a">About</a>
+    </nav>
+    <p class="p">Transform your life through fitness. Join our community for daily inspiration and health tips.</p>
+    <div class="newsletter-container">
+      <input type="email" class="newsletter-input" placeholder="Enter your email">
+      <button class="newsletter-button">Subscribe</button>
+    </div>
+    <div class="contact-info">
+      <p>Email: <a href="mailto:tatonlinefitness@gmail.com">info@tatfitnesscenter.com</a></p>
+      <p>Contact Us: <a href="contact.html">Click here</a></p>
+    </div>
+    <p class="copyright">&copy; 2024 T.A.T Online Fitness Center Year 7 Helio PBL Group B. All rights reserved.</p>
+  </footer>
+</body>
+</html>

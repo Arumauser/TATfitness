@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Online fittness centre</title>
+  <link rel="icon" type="image/x-icon" href="logo.jpg">
+  <style type="text/css">
+    html{
+      font-family: sans-serif;
+    }
+  body{
+      margin: 0;
+    }
+    ul{
+      list-style-type: none;
+      background-color: #99d1c6;
+      overflow: hidden;
+      width: 100%;
+      height: 96px;
+      padding: 0;
+      margin: 0;
+      top: 0;
+      position: sticky;
+    }
+    li{
+      float: right;
+    }
+    li a{
+      display: inline-block;
+      color: white;
+      font-size: 30px;
+      text-align: center;
+      text-decoration: none;
+      padding: 30px 30px;
+    }
+    li a:hover:not(.active){
+      background-color: #4b686d;
+    }
+    div{
+      box-sizing: border-box;
+    }
+    .flexconrtainer{
+            display: flex;
+            flex-direction: row;
+        }
+        .flexconrtainer>div{
+            width: 600px;
+            height: 220px;
+            margin: 20px;
+            padding: 10px;
+            background-color: #cbd6d3;
+            font-size: 15px;
+        }
+        .img2{
+          width: 200px;
+          height: 200px;
+          float: left;
+        }
+        .text{
+          padding-left: 220px;
+          line-height: 1.5;
+          text-align: justify;
+        }
+         .footer {
+      background-color: #99d1c6;
+      color: #ffffff;
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 18px;
+      position: relative;
+      font-family: monospace sans-serif;
+    }
+    .footer-logo {
+      height: 50px;
+      width: auto;
+      margin-bottom: 20px;
+    }
+    .footer-nav {
+      margin-bottom: 20px;
+    }
+    .footer-nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+    .footer-nav a:hover {
+      color: #4b686d;
+    }
+    .social-icons {
+      margin-bottom: 20px;
+    }
+    .social-icons a {
+      color: #ffffff;
+      font-size: 24px;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+    .social-icons a:hover {
+      color: #4b686d;
+    }
+    .newsletter-container {
+      margin-bottom: 20px;
+    }
+    .newsletter-input {
+      padding: 10px;
+      width: 300px;
+      border-radius: 5px;
+      border: 1px solid #ffffff;
+      margin-right: 10px;
+    }
+    .newsletter-button {
+      padding: 10px 20px;
+      background-color: #ffffff;
+      color: #99d1c6;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .newsletter-button:hover {
+      background-color: #4b686d;
+      color: #ffffff;
+    }
+    .contact-info {
+      margin-bottom: 20px;
+    }
+    .contact-info p {
+      margin: 5px;
+    }
+    .contact-info a {
+      color: #ffffff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .contact-info a:hover {
+      color: #4b686d;
+    }
+    .copyright {
+      margin-top: 20px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .flexconrtainer{
+       flex-direction: column;
+    }
+  </style>
+</head>
+<body style="background-color: #ddf1ed">
+  <ul>
+    <li><a href="about.html">About</a></li>
+    <li><a href="shop">Shop</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="more">More</a></li>
+    <li><a href="mainpage.html">Home</a></li>
+    <li><img src="logo.jpg" class="logo"></li>
+  </ul>
+  <h1 style="font-size: 35px;">Yoga</h1>
+  <br><br>
+  <div class="flexconrtainer">
+      <div>
+        <img src="fittness23.jpg" class="img2">
+        <h2 class="text">Kundalini Yoga</h2>
+        <p class="text">Kundalini yoga is also suitable for stress, anxiety, depression and better cognitive function.</p>
+      </div>
+      <div>
+        <img src="fittness24.jpeg" class="img2">
+        <h2 class="text">Bikram Yoga</h2>
+        <p class="text">People practice Bikram yoga, also known as hot yoga, in artificially heated rooms at a temperature of nearly 105oF and 40% humidity.</p>
+      </div>
+      <div>
+        <img src="fittness25.webp" class="img2">
+        <h2 class="text">Prenatal Yoga</h2>
+        <p class="text">Prenatal yoga is carefully adapted for moms-to-be, and is tailored to women in all trimesters.</p>
+      </div>
+  </div>
+  <div class="flexconrtainer">
+      <div>
+        <img src="fittness26.jpg" class="img2">
+        <h2 class="text">Anusara Yoga</h2>
+        <p class="text">The anusara style of yoga is a new system of hatha that teaches a set of Universal Principles of Alignment that underlie all yoga postures.</p>
+      </div>
+      <div>
+        <img src="fittness27.webp" class="img2">
+        <h2 class="text">Jivamukti Yoga</h2>
+        <p class="text">Jivamukti is mainly vinyasa-flow-style classes infused with Hindu spiritual teachings. At its core, this style emphasizes connection to Earth as a living being.</p>
+      </div>
+      <div>
+        <img src="fittness28.jpg" class="img2">
+        <h2 class="text">Karma Yoga</h2>
+        <p class="text">The path of selfless action, Karma Yoga encourages practitioners to perform their duties in life without attachment to the outcomes.</p>
+      </div>
+  </div>
+  <div class="flexconrtainer">
+      <div>
+        <img src="fittness29.webp" class="img2">
+        <h2 class="text">Aerial Yoga</h2>
+        <p class="text">As opposed to traditional yoga, aerial yoga also incorporates other exercises-all while defying gravity.</p>
+      </div>
+      <div>
+        <img src="fittness30.jpeg" class="img2">
+        <h2 class="text">Chair Yoga</h2>
+        <p class="text">As the name suggests, this form of yoga is performed while seated on a chair or using a chair as a prop for balance. </p>
+      </div>
+      <div>
+        <img src="fittness31.jpg" class="img2">
+        <h2 class="text">Sivananda Yoga</h2>
+        <p class="text">The class then moves through Sivananda's twelve asanas, which together are designed to increase strength and flexibility of the spine.</p>
+      </div>
+  </div>
+  <div class="flexconrtainer">
+      <div>
+        <img src="fittness32.jpg" class="img2">
+        <h2 class="text">Bhakti</h2>
+        <p class="text">Bhakti comes from bhaj, which means to worship or love God. Some people consider bhakti-yoga a way to liberate themselves from the eternal birth and death cycle.</p>
+      </div>
+      <div>
+        <img src="fittness33.jpeg" class="img2">
+        <h2 class="text">Viniyoga</h2>
+        <p class="text">Viniyoga refers to an approach to yoga that adapts the various means and methods of practice to the unique condition, needs and interests of the individual.</p>
+      </div>
+      <div>
+        <img src="fittness34.webp" class="img2">
+        <h2 class="text">Acro Yoga</h2>
+        <p class="text">In AcroYoga, one person takes on the role of the base, providing a stable and supportive foundation, while another person becomes the flyer, performing dynamic </p>
+      </div>
+  </div>
+  <div class="flexconrtainer">
+      <div>
+        <img src="fittness35.avif" class="img2">
+        <h2 class="text">Yin Yoga</h2>
+        <p class="text">Yin yoga is a slow-paced style of yoga with seated postures that are held for longer periods of time.</p>
+      </div>
+      <div>
+        <img src="fittness36.webp" class="img2">
+        <h2 class="text">Power Yoga</h2>
+        <p class="text">Power Yoga is any of several forms of energetic vinyasa-style yoga as exercise developed in America in the 1990s.</p>
+      </div>
+      <div>
+        <img src="fittness37.jpg" class="img2">
+        <h2 class="text">Mysore style</h2>
+        <p class="text">You can either attend a regular class or the more traditional Mysore style (see below). Mysore style. Ashtanga yoga taught one-to-one in a group setting</p>
+      </div>
+  </div>
+  <div class="flexconrtainer">
+      <div>
+        <img src="fittness38.jpg" class="img2">
+        <h2 class="text">Tantra</h2>
+        <p class="text">Yin yoga is a slow-paced style of yoga with seated postures that are held for longer periods of time.</p>
+      </div>
+      <div>
+        <img src="fittness39.jpg" class="img2">
+        <h2 class="text">Pranayama</h2>
+        <p class="text">Then one performs pranayama, chanting, and meditation. Jal neti kriya is a cleansing technique that helps remove mucus and other blockages from the nasal.</p>
+      </div>
+      <div>
+        <img src="fittness40.jpg" class="img2">
+        <h2 class="text">Ananda Yoga</h2>
+        <p class="text">You can either attend a regular class or the more traditional Mysore style (see below). Mysore style. Ashtanga yoga taught one-to-one in a group setting</p>
+      </div>
+  </div>
+  <div class="flexconrtainer">
+      <div>
+        <img src="fittness41.jpg" class="img2">
+        <h2 class="text">Yang Yoga</h2>
+        <p class="text">Yin refers to unmoving and being static, whilst yang is the opposite, representing movement and flow.</p>
+      </div>
+      <div>
+        <img src="fittness42.jpg" class="img2">
+        <h2 class="text">Slow Flow</h2>
+        <p class="text">Then one performs pranayama, chanting, and meditation. Jal neti kriya is a cleansing technique that helps remove mucus and other blockages from the nasal.</p>
+      </div>
+      <div>
+        <img src="fittness43.jpg" class="img2">
+        <h2 class="text">Raja</h2>
+        <p class="text">Raja yoga: This branch involves meditation and strict adherence to a series of disciplinary steps known as the eight limbs of yoga.</p>
+      </div>
+  </div>
+  <br><br><br><br>
+  <footer class="footer">
+    <div class="social-icons">
+      <a href="https://www.instagram.com/onlinefitnesscenter_/" target="_blank" title="Instagram" class="a"><img src="app2.jpg" style="width: 20px; height: 20px; border-radius: 20px;"></a>
+      <a href="https://www.tiktok.com/@t.a.tfitness?_t=8jz8tEY9TqZ&_r=1" target="_blank" title="TikTok" class="a"><img src="app1.jpg" style="width: 20px; height: 20px; border-radius: 20px;"></a>
+      <a href="https://www.youtube.com/" target="_blank" title="Youtube" class="a"><img src="app3.jpg" style="width: 20px; height: 20px; border-radius: 20px;"></i></a>
+    </div>
+    <img src="logo.jpg" alt="T.A.T Online Fitness Center" class="footer-logo">
+    <nav class="footer-nav">
+      <a href="mainpage.html" class="a">Home</a>
+      <a href="more.html" class="a">More</a>
+      <a href="contact.html" class="a">Contact</a>
+      <a href="shop.html" class="a">Shop</a>
+      <a href="about.html" class="a">About</a>
+    </nav>
+    <p class="p">Transform your life through fitness. Join our community for daily inspiration and health tips.</p>
+    <div class="newsletter-container">
+      <input type="email" class="newsletter-input" placeholder="Enter your email">
+      <button class="newsletter-button">Subscribe</button>
+    </div>
+    <div class="contact-info">
+      <p>Email: <a href="mailto:info@tatonlinefitnesscenter.com">info@tatfitnesscenter.com</a></p>
+      <p>Contact Us: <a href="contact.html">Click here</a></p>
+    </div>
+    <p class="copyright">&copy; 2024 T.A.T Online Fitness Center Year 7 Helio PBL Group B. All rights reserved.</p>
+  </footer>
+</body>
+</html>

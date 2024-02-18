@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="icon" type="image/x-icon" href="logo.jpg">
+  <style>
+  	ul{
+		list-style-type: none;
+		background-color: #99d1c6;
+		overflow: hidden;
+		width: 100%;
+		height: 96px;
+		padding: 0;
+		margin: 0;
+		top: 0;
+		position: sticky;
+	}
+	li{
+		float: right;
+	}
+	li a{
+		display: inline-block;
+		color: white;
+		font-size: 30px;
+		text-align: center;
+		text-decoration: none;
+		padding: 30px 25px;
+	}
+		li a:hover:not(.active){
+		background-color: #4b686d;
+	}
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    h1{
+    	margin: auto;
+    	color: #99d1c6;
+    	text-align: center;
+    }
+    section {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 30px;
+      background-color: #fff;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      color:#99d1c6;
+    }
+
+    .input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+
+    .button {
+      background-color: #99d1c6;
+      color: #fff;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #4b686d;
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+
+    .map {
+      flex: 1;
+      height: 300px;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .info {
+      flex: 1;
+      padding-left: 20px;
+    }
+
+    h2 {
+      color: #99d1c6;
+    }
+
+    .social-links a {
+      display: inline-block;
+      margin-right: 10px;
+      color:  #99d1c6;
+      text-decoration: none;
+      font-size: 20px;
+      transition: color 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: #27ae60;
+    }
+   .footer {
+      background-color: #99d1c6;
+      color: #ffffff;
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 18px;
+      position: relative;
+      font-family: monospace sans-serif;
+    }
+    .footer-logo {
+      height: 50px;
+      width: auto;
+      margin-bottom: 20px;
+    }
+    .footer-nav {
+      margin-bottom: 20px;
+    }
+    .footer-nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+    .footer-nav a:hover {
+      color: #4b686d;
+    }
+    .social-icons {
+      margin-bottom: 20px;
+    }
+    .social-icons a {
+      color: #ffffff;
+      font-size: 24px;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+    .social-icons a:hover {
+      color: #4b686d;
+    }
+    .newsletter-container {
+      margin-bottom: 20px;
+    }
+    .newsletter-input {
+      padding: 10px;
+      width: 300px;
+      border-radius: 5px;
+      border: 1px solid #ffffff;
+      margin-right: 10px;
+    }
+    .newsletter-button {
+      padding: 10px 20px;
+      background-color: #ffffff;
+      color: #99d1c6;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .newsletter-button:hover {
+      background-color: #4b686d;
+      color: #ffffff;
+    }
+    .contact-info1 {
+      margin-bottom: 20px;
+    }
+    .contact-info1 p {
+      margin: 5px;
+    }
+    .contact-info1 a {
+      color: #ffffff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .contact-info1 a:hover {
+      color: #4b686d;
+    }
+    .copyright {
+      margin-top: 20px;
+    }
+        .logo{
+			height: 96px;
+			width: 96px;
+			padding-right: 716.9px;
+		}
+  </style>
+</head>
+<body>
+	<ul>
+		<li><a href="about.html">About</a></li>
+		<li><a href="shop.html">Shop</a></li>
+		<li><a href="contact.html">Contact</a></li>
+		<li><a href="more.html">More</a></li>
+		<li><a href="mainpage.html">Home</a></li>
+		<li><img src="logo.jpg" class="logo"></li>
+	</ul>
+    <h1>Contact us</h1>
+  <section>
+    <form action="#" method="post">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required class="input">
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required class="input">
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" rows="6" required class="textarea"></textarea>
+
+      <button type="submit" class="button">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <div class="info">
+        <h2>Contact Information</h2>
+        <p><strong>Email:</strong> amiratparkaur8@gmail.com</p>
+        <p><strong>Phone:</strong> +95 9 965 854 123</p>
+
+        <div class="social-links">
+          <a href="#" target="_blank">Facebook</a>
+          <a href="#" target="_blank">Tiktok</a>
+          <a href="https://www.instagram.com/onlinefitnesscenter_/#" target="_blank">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+  <br>
+   <footer class="footer">
+    <div class="social-icons">
+      <a href="https://www.instagram.com/onlinefitnesscenter_/" target="_blank" title="Instagram" class="a"><img src="app2.jpg" style="width: 20px; height: 20px; border-radius: 20px;"></a>
+      <a href="https://www.tiktok.com/@t.a.tfitness?_t=8jz8tEY9TqZ&_r=1" target="_blank" title="TikTok" class="a"><img src="app1.jpg" style="width: 20px; height: 20px; border-radius: 20px;"></a>
+      <a href="https://www.youtube.com/" target="_blank" title="Youtube" class="a"><img src="app3.jpg" style="width: 20px; height: 20px; border-radius: 20px;"></i></a>
+    </div>
+    <img src="logo.jpg" alt="T.A.T Online Fitness Center" class="footer-logo">
+    <nav class="footer-nav">
+      <a href="mainpage.html" class="a">Home</a>
+      <a href="more.html" class="a">More</a>
+      <a href="contact.html" class="a">Contact</a>
+      <a href="shop.html" class="a">Shop</a>
+      <a href="about.html" class="a">About</a>
+    </nav>
+    <p class="p">Transform your life through fitness. Join our community for daily inspiration and health tips.</p>
+    <div class="newsletter-container">
+      <input type="email" class="newsletter-input" placeholder="Enter your email">
+      <button class="newsletter-button">Subscribe</button>
+    </div>
+    <div class="contact-info1">
+      <p>Email: <a href="mailto:info@tatonlinefitnesscenter.com">info@tatfitnesscenter.com</a></p>
+      <p>Contact Us: <a href="contact.html">Click here</a></p>
+    </div>
+    <p class="copyright">&copy; 2024 T.A.T Online Fitness Center Year 7 Helio PBL Group B. All rights reserved.</p>
+  </footer>
+</body>
+</html>
